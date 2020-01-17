@@ -1,0 +1,70 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "attendance"
+  ],
+  "properties": {
+    "attendance": {
+      "$id": "#/properties/attendance",
+      "type": "array",
+      "title": "The Attendance Schema",
+      "items": {
+        "$id": "#/properties/attendance/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "attendanceId",
+          "courseSessionId",
+          "status",
+          "timestamp"
+        ],
+        "properties": {
+          "attendanceId": {
+            "$id": "#/properties/attendance/items/properties/attendanceId",
+            "type": "string",
+            "title": "The Attendanceid Schema",
+            "default": "",
+            "examples": [
+              "CR-ATT208-20201215"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "courseSessionId": {
+            "$id": "#/properties/attendance/items/properties/courseSessionId",
+            "type": "string",
+            "title": "The Coursesessionid Schema",
+            "default": "",
+            "examples": [
+              "CR-20201215-AM"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "status": {
+            "$id": "#/properties/attendance/items/properties/status",
+            "type": "string",
+            "title": "The Status Schema",
+            "default": "",
+            "examples": [
+              "Attendance Submitted"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "timestamp": {
+            "$id": "#/properties/attendance/items/properties/timestamp",
+            "type": "string",
+            "title": "The Timestamp Schema",
+            "default": "",
+            "examples": [
+              "2019-12-02 30:15:000"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "employerId",
+    "enrolmentDate",
+    "trainingProviderId",
+    "courseName",
+    "status"
+  ],
+  "properties": {
+    "employerId": {
+      "$id": "#/properties/employerId",
+      "type": "string",
+      "title": "The Employerid Schema",
+      "default": "",
+      "examples": [
+        "SSG-ENR-1912-000123"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "enrolmentDate": {
+      "$id": "#/properties/enrolmentDate",
+      "type": "string",
+      "title": "The Enrolmentdate Schema",
+      "default": "",
+      "examples": [
+        "2019-12-02"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "trainingProviderId": {
+      "$id": "#/properties/trainingProviderId",
+      "type": "string",
+      "title": "The Trainingproviderid Schema",
+      "default": "",
+      "examples": [
+        "ORG00008TEST"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "courseName": {
+      "$id": "#/properties/courseName",
+      "type": "string",
+      "title": "The Coursename Schema",
+      "default": "",
+      "examples": [
+        "Masters in Professional Business Development"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "status": {
+      "$id": "#/properties/status",
+      "type": "string",
+      "title": "The Status Schema",
+      "default": "",
+      "examples": [
+        "Enrolment Completed"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

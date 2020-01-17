@@ -1,0 +1,11 @@
+{
+  "grants": [
+    {
+      "grantName": "SSG-GRT-001",
+      "amount": "500",
+      "fundingScheme": "SSG-FNDSCH-00123",
+      "fundingAgency": "SSG",
+      "grantStatus": "Confirmed"
+    }
+  ]
+}

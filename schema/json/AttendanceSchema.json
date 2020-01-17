@@ -1,0 +1,10 @@
+{
+  "attendance": [
+    {
+      "attendanceId": "CR-ATT208-20201215",
+      "courseSessionId": "CR-20201215-AM",
+      "status": "Attendance Submitted",
+      "timestamp": "2019-12-02 30:15:000"
+    }
+  ]
+}

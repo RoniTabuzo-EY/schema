@@ -1,0 +1,81 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "grants"
+  ],
+  "properties": {
+    "grants": {
+      "$id": "#/properties/grants",
+      "type": "array",
+      "title": "The Grants Schema",
+      "items": {
+        "$id": "#/properties/grants/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "grantName",
+          "amount",
+          "fundingScheme",
+          "fundingAgency",
+          "grantStatus"
+        ],
+        "properties": {
+          "grantName": {
+            "$id": "#/properties/grants/items/properties/grantName",
+            "type": "string",
+            "title": "The Grantname Schema",
+            "default": "",
+            "examples": [
+              "SSG-GRT-001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "amount": {
+            "$id": "#/properties/grants/items/properties/amount",
+            "type": "string",
+            "title": "The Amount Schema",
+            "default": "",
+            "examples": [
+              "500"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "fundingScheme": {
+            "$id": "#/properties/grants/items/properties/fundingScheme",
+            "type": "string",
+            "title": "The Fundingscheme Schema",
+            "default": "",
+            "examples": [
+              "SSG-FNDSCH-00123"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "fundingAgency": {
+            "$id": "#/properties/grants/items/properties/fundingAgency",
+            "type": "string",
+            "title": "The Fundingagency Schema",
+            "default": "",
+            "examples": [
+              "SSG"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "grantStatus": {
+            "$id": "#/properties/grants/items/properties/grantStatus",
+            "type": "string",
+            "title": "The Grantstatus Schema",
+            "default": "",
+            "examples": [
+              "Confirmed"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}
